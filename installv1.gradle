@@ -1,8 +1,6 @@
 apply plugin: 'com.github.dcendents.android-maven'
 
-def config = rootProject.extensions.getByName("ext")
-
-group = config.publishedGroupId                               // Maven Group ID for the artifact
+group = publishedGroupId                               // Maven Group ID for the artifact
 
 install {
     repositories.mavenInstaller {
