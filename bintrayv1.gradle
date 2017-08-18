@@ -33,6 +33,9 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
+println properties.getProperty("bintray.user")
+println properties.getProperty("bintray.apikey")
+
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
